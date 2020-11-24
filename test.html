@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Courses</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css"> 
+<link rel="stylesheet" type="text/css" href="style2.css"> 
+<link rel="stylesheet" type="text/css" href="style3.css"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  * {
+  box-sizing: border-box;
+}
+#myInput {
+  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+</style>
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="courses.html">Courses</a>
+            <a href="staff.html">Staff</a>
+            <a href="achievements.html">Achievements</a>
+            <a href="research.html">Research</a>
+            <a href="contact.html">Contact</a>
+          </div>
+    <div style="height: 1300px;width: 1200px;margin: auto;padding: 30px;background-color: white;">
+    <!-- Top navigation -->
+    <div class="topnav">
+    
+      <!-- Centered link -->
+      <div class="topnav-centered">
+        <a href="index.html" class="active">KMIT. DUBAI</a>
+      </div>
+      
+      <!-- Left-aligned links (default) -->
+      
+      <a href="#news"><span style="font-size:15px;cursor:pointer" onclick="openNav()">&#9776;</span></a>
+      
+    </div>
+      
+    <!-- Right-aligned links -->
+    <div class="topnav-right">
+      <div class="dropdown" style="float: left;">
+        <button onclick="Dropdownfn()" class="dropbtn">Search</button>
+        <div id="myDropdown" class="dropdown-content">
+          <input type="text" placeholder="Search.." id="mySearch" onkeyup="dropsearch()">
+          <a href="#about">About</a>
+          <a href="#base">Base</a>
+          <a href="#blog">Blog</a>
+          <a href="#contact">Contact</a>
+          <a href="#custom">Custom</a>
+          <a href="#support">Support</a>
+          <a href="#tools">Tools</a>
+        </div>
+      </div>
+      <div class="loginid">
+      <a href="login.html" style="float: right;">Login</a></div>
+    </div>
+    <div>
+      <input type="text" id="myInput" onkeyup="SearchFunction()" placeholder="Search for courses..">
+      <div id="myBtnContainer" style="padding-left: 360px;">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('Engineering')">Engineering</button>
+        <button class="btn" onclick="filterSelection('AandS')">Arts & Science</button>
+        <button class="btn" onclick="filterSelection('UG')">UG</button>
+        <button class="btn" onclick="filterSelection('PG')">PG</button>
+      </div><br><br>
+      <div class="container">
+      <div class="row">
+        <div class="column">
+          <div class="card Engineering UG">B. Tech. (Bachelor of Technology) in Aerospace Engineering<br><br>
+            <a href="admission.html"><input type="button" name="apply" id="applynow" value="Apply"></a>
+            <a href="Engineering.html"><input type="button" name="about" id="info" value="About"></a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card Engineering UG">B. Tech. (Bachelor of Technology) in Chemical Engineering<br><br>
+            <a href="admission.html"><input type="button" name="apply" id="applynow" value="Apply"></a>
+            <a href="Engineering.html"><input type="button" name="about" id="info" value="About"></a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card Engineering UG">B. Tech. (Bachelor of Technology) in Civil Engineering<br><br>
+            <a href="admission.html"><input type="button" name="apply" id="applynow" value="Apply"></a>
+            <a href="Engineering.html"><input type="button" name="about" id="info" value="About"></a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card Engineering UG">B. Tech. (Bachelor of Technology) in Computer Science and Engineering<br><br>
+            <a href="admission.html"><input type="button" name="apply" id="applynow" value="Apply"></a>
+            <a href="Engineering.html"><input type="button" name="about" id="info" value="About"></a>
+          </div>
+        </div>
+      </div><br><br>
+      <div class="row">
+        <div class="column">
+          <div class="card Engineering UG">B. Tech. (Bachelor of Technology) in Electronics and Communication Engineering<br><br>
+            <a href="admission.html"><input type="button" name="apply" id="applynow" value="Apply"></a>
+            <a href="Engineering.html"><input type="button" name="about" id="info" value="About"></a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card Engineering UG">B. Tech. (Bachelor of Technology) in Electrical and Electronics Engineering<br><br>
+            <a href="admission.html"><input type="button" name="apply" id="applynow" value="Apply"></a>
+            <a href="Engineering.html"><input type="button" name="about" id="info" value="About"></a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card Engineering UG">B. Tech. (Bachelor of Technology) in Mechanical Engineering<br><br>
+            <a href="admission.html"><input type="button" name="apply" id="applynow" value="Apply"></a>
+            <a href="Engineering.html"><input type="button" name="about" id="info" value="About"></a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card Engineering UG">B. Tech. (Bachelor of Technology) in Computer and Communication Engineering<br><br>
+            <a href="admission.html"><input type="button" name="apply" id="applynow" value="Apply"></a>
+            <a href="Engineering.html"><input type="button" name="about" id="info" value="About"></a>
+          </div>
+        </div>
+      </div><br><br>
+      <div class="row">
+        <div class="column">
+          <div class="card Engineering UG">B. Tech. (Bachelor of Technology) in Electrical and Computer Engineering<br><br>
+            <a href="admission.html"><input type="button" name="apply" id="applynow" value="Apply"></a>
+            <a href="Engineering.html"><input type="button" name="about" id="info" value="About"></a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card AandS UG">B. A. (Bachelor of Arts) English Language and Literature<br><br>
+            <a href="admission.html"><input type="button" name="apply" id="applynow" value="Apply"></a>
+          <a><input type="button" name="about" id="info" value="About"></a></div>
+        </div>
+        <div class="column">
+          <div class="card AandS UG">B. Sc. (Bachelor of Science) in Physics<br><br>
+            <a href="admission.html"><input type="button" name="apply" id="applynow" value="Apply"></a>
+            <a href="aands.html"><input type="button" name="about" id="info" value="About"></a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card AandS UG">B. Sc. (Bachelor of Science) in Mathematics<br><br>
+            <a href="admission.html"><input type="button" name="apply" id="applynow" value="Apply"></a>
+            <a href="aands.html"><input type="button" name="about" id="info" value="About"></a>
+          </div>
+        </div>
+      </div><br><br>
+      <div class="row">
+        <div class="column">
+          <div class="card AandS UG">B. Sc. (Bachelor of Science) in Chemistry<br><br>
+            <a href="admission.html"><input type="button" name="apply" id="applynow" value="Apply"></a>
+            <a href="aands.html"><input type="button" name="about" id="info" value="About"></a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card AandS UG">Bachelor of Computer Applications (B. C. A.)<br><br>
+            <a href="admission.html"><input type="button" name="apply" id="applynow" value="Apply"></a>
+            <a href="aands.html"><input type="button" name="about" id="info" value="About"></a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card PG">Ph. D. in Humanities and Social Sciences<br><br>
+            <a href="admission.html"><input type="button" name="apply" id="applynow" value="Apply"></a>
+            <a href="pg.html"><input type="button" name="about" id="info" value="About"></a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card  PG">Ph. D. in Sciences<br><br>
+            <a href="admission.html"><input type="button" name="apply" id="applynow" value="Apply"></a>
+            <a href="pg.html"><input type="button" name="about" id="info" value="About"></a>
+          </div>
+        </div>
+      </div><br><br>
+      <div class="row">
+        <div class="column PG">
+          <div class="card">Ph. D. in Communication<br><br>
+            <a href="admission.html"><input type="button" name="apply" id="applynow" value="Apply"></a>
+            <a href="pg.html"><input type="button" name="about" id="info" value="About"></a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card  PG">M. Tech. (Master of Technology) in Artificial Intelligence and Data Science<br><br>
+            <a href="admission.html"><input type="button" name="apply" id="applynow" value="Apply"></a>
+            <a><input type="button" name="about" id="info" value="About"></a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card  PG">M. Tech. (Master of Technology) in Automotive Engineering<br><br>
+            <a href="admission.html"><input type="button" name="apply" id="applynow" value="Apply"></a>
+            <a href="pg.html"><input type="button" name="about" id="info" value="About"></a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card  PG">M. Tech. (Master of Technology) in Bio-Medical Engineering<br><br>
+            <a href="admission.html"><input type="button" name="apply" id="applynow" value="Apply"></a>
+            <a href="pg.html"><input type="button" name="about" id="info" value="About"></a>
+          </div>
+        </div>
+      </div><br><br>
+      <div class="row">
+        <div class="column">
+          <div class="card PG">M. Tech. (Master of Technology) in Communication Systems<br><br>
+            <a href="admission.html"><input type="button" name="apply" id="applynow" value="Apply"></a>
+            <a href="pg.html"><input type="button" name="about" id="info" value="About"></a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card AandS PG">Integrated. M. Sc. in Physics<br><br>
+            <a href="admission.html"><input type="button" name="apply" id="applynow" value="Apply"></a>
+            <a href="pg.html"><input type="button" name="about" id="info" value="About"></a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card AandS PG">Integrated. M. Sc. in Mathematics<br><br>
+            <a href="admission.html"><input type="button" name="apply" id="applynow" value="Apply"></a>
+            <a href="pg.html"><input type="button" name="about" id="info" value="About"></a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card AandS PG">Integrated. M. Sc. in Chemistry<br><br>
+            <a href="admission.html"><input type="button" name="apply" id="applynow" value="Apply"></a>
+            <a href="pg.html"><input type="button" name="about" id="info" value="About"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="footer" style="width: 1110px;background-color: darkgray;height: 120px;top: 1180px;position: absolute;">
+      <h5 style="text-align: center;">Find Us On</h5>
+  <div class="info" style="text-align: center;">
+    <i class="fa fa-facebook-official"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-snapchat"></i>
+    <i class="fa fa-pinterest-p"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-linkedin"></i>
+  </div>
+  <p style="text-align: center;">Kekron Makron Institute of Technology &copy;</p>
+    </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+      filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("card");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+  }
+}
+
+function AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+    </script>
+    <script src="script2.js"></script>
+    </body>
+</html>

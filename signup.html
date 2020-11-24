@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign-Up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css"> 
+<link rel="stylesheet" type="text/css" href="style3.css"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("book-stack.jpg");
+
+  /* Control the height of the image */
+  min-height: 600px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 10px;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+    </style>
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="courses.html">Courses</a>
+      <a href="staff.html">Staff</a>
+      <a href="achievements.html">Achievements</a>
+      <a href="research.html">Research</a>
+      <a href="contact.html">Contact</a>
+    </div>
+<div style="height: 870px;width: 1200px;margin: auto;padding: 30px;background-color: whitesmoke;">
+<!-- Top navigation -->
+<div class="topnav">
+
+<!-- Centered link -->
+<div class="topnav-centered">
+  <a href="index.html" class="active">KMIT. DUBAI</a>
+</div>
+
+<!-- Left-aligned links (default) -->
+
+<a href="#news"><span style="font-size:15px;cursor:pointer" onclick="openNav()">&#9776;</span></a>
+
+<!-- Right-aligned links -->
+</div>
+      
+<!-- Right-aligned links -->
+<div class="topnav-right">
+  <div class="dropdown" style="float: left;">
+    <button onclick="Dropdownfn()" class="dropbtn">Search</button>
+    <div id="myDropdown" class="dropdown-content">
+      <input type="text" placeholder="Search.." id="mySearch" onkeyup="dropsearch()">
+      <a href="about.html">About</a>
+            <a href="staff.html">Staff</a>
+            <a href="Engineering.html">Engineering</a>
+            <a href="contact.html">Contact</a>
+            <a href="admission.html">Admissions</a>
+            <a href="courses.html">Courses</a>
+            <a href="achievements.html">Achievements</a>
+            <a href="research.html">Research</a>
+    </div>
+  </div>
+  <div class="loginid">
+  <a href="login.html" style="float: right;">Login</a></div>
+</div><br>
+<div class="bg-img">
+  <form action="courses.html" class="container" onsubmit="return check()">
+    <h1>Sign-Up</h1>
+    <label for="text"><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="name" required>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+
+    <label for="repsw"><b>Re-Enter Password</b></label>
+    <input type="password" placeholder="Enter Password" name="repsw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must Match the password above" required>
+
+    <button type="submit" class="btn">Sign-Up</button>
+  </form>
+</div>
+<div class="footer" style="width: 1110px;background-color: darkgray;height: 150px;margin: auto;">
+  <h5 style="text-align: center;padding: 15px;">Find Us On</h5>
+  <div class="info" style="text-align: center;">
+    <i class="fa fa-facebook-official"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-snapchat"></i>
+    <i class="fa fa-pinterest-p"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-linkedin"></i>
+  </div>
+  <p style="text-align: center;">Kekron Makron Institute of Technology &copy;</p>
+</div>
+</div>
+  </body>
+  <script src="script.js"></script>
+  <script>
+    sucessfull()
+    { 
+      alert("Sign-up Sucessfull!");
+    }
+    check()
+    {
+      var psw=document.getElementsByName("psw").value;
+      var repsw=document.getElementsByName("repsw").value;
+      if(psw!=repsw){
+        alert("The Password Doesn't Match");
+        return false;
+      }
+      else{
+             alert("Sign-up Sucessfull!");
+              window.location="courses.html";
+      }
+    }
+  </script>
+</html>

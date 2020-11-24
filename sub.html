@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Subsrciption</title>
+        <style>
+          body{
+    background-color:#566573 ;
+}
+#container{
+    background-color: white;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#main{
+    width: 800px;
+    float: right;
+}
+#footer{
+    clear: both;
+    text-align: right;
+    background-color: gray;
+    padding: 10px;
+}
+#header{
+    outline-style: solid;
+    outline-color: black;
+    background-color: #66CCFF;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+  }
+        </style>
+    </head>
+    <body style="background-image: url(Italy.jpg);background-size: 100%;">
+        <div id="container" style="padding: 10px;">
+          <div id="header">
+          <h2>Subsrciption Form</h2>
+          </div>
+          <div id="content" style="padding: 10px;margin: auto;">
+            <h4 style="text-align: center;"><b><u>Please fill the form</u></b></h4>
+              <form style="text-align: center;" action="Thankyou.html">
+                    First name:
+                    <input type="text" name="firstname" value="" placeholder="type here....">
+                    <br><br>
+                    Last name:
+                    <input type="text" name="lastname" value="Aarumugam">
+                    <br><br>
+                    Country:<select>
+                            <option>Select</option>
+                            <option>India</option>
+                            <option>Germany</option>
+                            <option>USA</option>
+                            <option>Australia</option>
+                            <option>Canada</option>
+                            <option>Sri lanka</option>
+                            <option>France</option>
+                            <option>Colombia</option>
+                        </select>
+                    <br><br>
+                    Date of birth:
+                    <input type="date" name="bday"><br><br>
+                    Gender:<label><input type="radio" name="answer" value="female" checked>Female   </label><label><input type="radio" name="answer" value="male">Male</label><br><br>
+                    Email - ID:
+                    <input type="email" name="emailid"><br><br>
+                    Address :<textarea name="message" rows="5" cols="30">No.6 Vivekanandar Theru, Dubai Kurukku sandhu, Dubai main road ,Dubai</textarea>
+                    <br><br>
+                    <input type="submit" value="Submit">
+                    <input type="reset">
+              </form>
+        </div>
+          <div id="footer">
+           Copyright &copy; 2020 CSE-KMIT
+          </div>
+        </div>
+    </body>
+</html>
