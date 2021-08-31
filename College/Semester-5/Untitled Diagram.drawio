@@ -1,41 +1,44 @@
-<mxfile host="app.diagrams.net" modified="2021-08-27T05:28:03.479Z" agent="5.0 (Windows)" etag="Q694QemoR88FYJmvA-Xk" version="14.7.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-08-31T07:16:06.018Z" agent="5.0 (Windows)" etag="z2dfVe50n_k42Hi20_G1" version="15.0.2" type="github">
   <diagram id="6El9KSIhYh-yziXGKnm0" name="Page-1">
-    <mxGraphModel dx="1710" dy="744" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1278" dy="528" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="vFWnm-aeCoAQg2eW2f-9-1" value="Station (Reach station)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="vFWnm-aeCoAQg2eW2f-9-1" value="Station (Reach station)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="170" y="240" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="vFWnm-aeCoAQg2eW2f-9-2" value="Ticket(purchase)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="vFWnm-aeCoAQg2eW2f-9-2" value="Ticket (Purchase)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="170" y="190" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="vFWnm-aeCoAQg2eW2f-9-3" value="Verification (Station Master)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="vFWnm-aeCoAQg2eW2f-9-3" value="Verification (Station Master)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="690" y="290" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="vFWnm-aeCoAQg2eW2f-9-4" value="Boarding (Train)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="vFWnm-aeCoAQg2eW2f-9-4" value="Boarding (Train)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="170" y="340" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="vFWnm-aeCoAQg2eW2f-9-5" value="Train Routing" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="vFWnm-aeCoAQg2eW2f-9-5" value="Train Routing" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="170" y="390" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="vFWnm-aeCoAQg2eW2f-9-6" value="Train Routing" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="vFWnm-aeCoAQg2eW2f-9-6" value="Train Routing" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="355" y="390" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="vFWnm-aeCoAQg2eW2f-9-7" value="Train Routing" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="vFWnm-aeCoAQg2eW2f-9-7" value="Train Routing" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="520" y="390" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="vFWnm-aeCoAQg2eW2f-9-8" value="Train Routing" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="vFWnm-aeCoAQg2eW2f-9-8" value="Train Routing" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="690" y="390" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="vFWnm-aeCoAQg2eW2f-9-9" value="De-board (Train)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="vFWnm-aeCoAQg2eW2f-9-9" value="De-board (Train)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="690" y="340" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="vFWnm-aeCoAQg2eW2f-9-10" value="Verification (Ticket Checker)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="vFWnm-aeCoAQg2eW2f-9-10" value="Verification (Ticket Checker)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="170" y="290" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="vFWnm-aeCoAQg2eW2f-9-11" value="Gate (Reach Destination)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="vFWnm-aeCoAQg2eW2f-9-11" value="Gate (Reach Destination)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="690" y="240" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RfHPSMBIBBipIGtR9Bt6-1" value="Ticket (Queries)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="690" y="190" width="140" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
