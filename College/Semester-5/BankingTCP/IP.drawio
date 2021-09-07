@@ -1,0 +1,46 @@
+<mxfile host="app.diagrams.net" modified="2021-09-07T07:22:21.676Z" agent="5.0 (Windows)" etag="E3C_uY2b62-bq_zMw1ow" version="15.1.0" type="github">
+  <diagram id="zz0mKOecC72sVzWUUMJu" name="Page-1">
+    <mxGraphModel dx="704" dy="745" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="0J8yw136S-XIh5V0hXsa-1" value="Deposit Money" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="210" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0J8yw136S-XIh5V0hXsa-2" value="Enter Amount" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="260" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0J8yw136S-XIh5V0hXsa-3" value="Send Money" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="310" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0J8yw136S-XIh5V0hXsa-4" value="Authorization" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="360" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0J8yw136S-XIh5V0hXsa-5" value="Transaction" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="410" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0J8yw136S-XIh5V0hXsa-6" value="Transaction" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="410" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0J8yw136S-XIh5V0hXsa-7" value="Transaction" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="410" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0J8yw136S-XIh5V0hXsa-9" value="Queries" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="210" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0J8yw136S-XIh5V0hXsa-10" value="Withdraw" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="260" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0J8yw136S-XIh5V0hXsa-11" value="Receive" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="310" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0J8yw136S-XIh5V0hXsa-12" value="Verification" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="360" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0J8yw136S-XIh5V0hXsa-13" value="Transaction" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="410" width="120" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
