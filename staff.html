@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Staff</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css"> 
+<link rel="stylesheet" type="text/css" href="style3.css"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+          /* Three columns side by side */
+.column1 {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column1 {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row1::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 130px;
+  border-radius: 20px;
+  margin-left: 30px;
+  height: 30px;
+}
+
+.button:hover {
+  background-color: #555;
+}
+.row1 {margin: 0 -5px;}
+.card1 {
+  display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+  
+  /* Clear floats after the columns */
+  .row1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+        </style>
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="courses.html">Courses</a>
+            <a href="staff.html">Staff</a>
+            <a href="achievements.html">Achievements</a>
+            <a href="research.html">Research</a>
+            <a href="contact.html">Contact</a>
+          </div>
+    <div style="height: 2000px;width: 1200px;margin: auto;padding: 30px;background-color: whitesmoke;">
+    <!-- Top navigation -->
+    <div class="topnav">
+    
+      <!-- Centered link -->
+      <div class="topnav-centered">
+        <a href="index.html" class="active">KMIT. DUBAI</a>
+      </div>
+      
+      <!-- Left-aligned links (default) -->
+      
+      <a href="#news"><span style="font-size:15px;cursor:pointer" onclick="openNav()">&#9776;</span></a>
+      
+    </div>
+      
+    <!-- Right-aligned links -->
+    <div class="topnav-right">
+      <div class="dropdown" style="float: left;">
+        <button onclick="Dropdownfn()" class="dropbtn">Search</button>
+        <div id="myDropdown" class="dropdown-content">
+          <input type="text" placeholder="Search.." id="mySearch" onkeyup="dropsearch()">
+          <a href="about.html">About</a>
+            <a href="staff.html">Staff</a>
+            <a href="Engineering.html">Engineering</a>
+            <a href="contact.html">Contact</a>
+            <a href="admission.html">Admissions</a>
+            <a href="courses.html">Courses</a>
+            <a href="achievements.html">Achievements</a>
+            <a href="research.html">Research</a>
+        </div>
+      </div>
+      <div class="loginid">
+      <a href="login.html" style="float: right;">Login</a></div>
+    </div>
+    <div id="searchhere" style="padding-left:16px"><br>
+      <div id="myBtnContainer" style="padding-left: 360px;padding-bottom: 20px;">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('eng')">Engineering</button>
+        <button class="btn" onclick="filterSelection('as')">Arts & Science</button>
+      </div>
+      <div class="row1">
+        <div class="column1">
+          <div class="card1 eng">
+            <img src="Project images/sudalai-dubai-Edit.jpg" alt="vadivelu" style="width:100%;">
+            <div class="container">
+              <h2>Vadivelu</h2>
+              <hr>
+              <p class="title">Founder &amp; Dean</p>
+              <p>vadivelu@dubai.com</p>
+              <a href="staffinfo.html"><p><button class="button">Staff info</button></p></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column1">
+          <div class="card1 eng">
+            <img src="Project images/pichumani-edit.jpg" alt="pichumani" style="width:100%">
+            <div class="container">
+              <h2>Mr. Pichumani</h2>
+              <hr>
+              <p class="title">Deputy Dean</p>
+              <p>pichumani@bellboy.com</p>
+              <a href="staffinfo.html"><p><button class="button">Staff info</button></p></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column1">
+          <div class="card1 as">
+            <img src="Project images/steve-waughedit.jpg" alt="steve-waugh" style="width:100%">
+            <div class="container">
+              <h2>Steve Waugh</h2>
+              <hr>
+              <p class="title">Head of Eng.Dept</p>
+              <p>steve@canada.com</p>
+              <a href="staffinfo.html"><p><button class="button">Staff info</button></p></a>
+            </div>
+          </div>
+        </div>   
+
+        <div class="column1">
+          <div class="card1 eng">
+            <img src="Project images/waugh.jpg" alt="mark" style="width:100%">
+            <div class="container">
+              <h2>Mark Waugh</h2>
+              <hr>
+              <p class="title">Head of CSE Dept.</p>
+              <p>mark@20crs.com</p>
+              <a href="staffinfo.html"><p><button class="button">Staff info</button></p></a>
+            </div>
+          </div>
+        </div></div>
+        <div class="row1">
+        <div class="column1">
+          <div class="card1 eng">
+            <img src="Project images/vadivelu.jpg" alt="Kaipulla" style="width:100%">
+            <div class="container">
+              <h2>Kaipulla</h2>
+              <hr>
+              <p class="title">Professor, Mechanical Engineering</p>
+              <p>kaipulla@kattadurai.com</p>
+              <a href="staffinfo.html"><p><button class="button">Staff info</button></p></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column1">
+          <div class="card1 as">
+            <img src="Project images/murgesan.jpg" alt="Murugesan" style="width:100%">
+            <div class="container">
+              <h2>Murugesan</h2>
+              <hr>
+              <p class="title">Professor &amp; Academic Co-ordinator</p>
+              <p>murugesan@chandramukhi.com</p>
+              <a href="staffinfo.html"><p><button class="button">Staff info</button></p></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column1">
+          <div class="card1 eng">
+            <img src="Project images/vadivelu1.jpg" alt="vandumurugan" style="width:100%">
+            <div class="container">
+              <h2>Vandumurugan</h2>
+              <hr>
+              <p class="title">Professor, Chemical Engineering Dept.</p>
+              <p>Vandumurugan@lawyer.com</p>
+              <a href="staffinfo.html"><p><button class="button">Staff info</button></p></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column1">
+          <div class="card1 as">
+            <img src="Project images/nesamani.webp.jpg" alt="nesamani" style="width:100%">
+            <div class="container">
+              <h2>Nesamani</h2>
+              <hr>
+              <p class="title">Professor, Maths Dept.</p>
+              <p>nesamani@hammer.com</p>
+              <a href="staffinfo.html"><p><button class="button">Staff info</button></p></a>
+            </div>
+          </div>
+        </div></div>
+        <div class="row1">
+        <div class="column1">
+          <div class="card1 eng">
+            <img src="Project images/sumo.jpg" alt="sumo" style="width:100%">
+            <div class="container">
+              <h2>Sumo</h2>
+              <hr>
+              <p class="title">Head of Placements.</p>
+              <p>sumo@six.com</p>
+              <a href="staffinfo.html"><p><button class="button">Staff info</button></p></a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="column1">
+          <div class="card1 as">
+            <img src="Project images/snakebabu.jpg" alt="snake" style="width:100%">
+            <div class="container">
+              <h2>Snake Babu</h2>
+              <hr>
+              <p class="title">Professor, Physics Dept.</p>
+              <p>snakebabu@mla.com</p>
+              <a href="staffinfo.html"><p><button class="button">Staff info</button></p></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column1">
+          <div class="card1 as">
+            <img src="Project images/pulikesi.jpg" alt="pulikesi" style="width:100%">
+            <div class="container">
+              <h2>Pulikesi</h2>
+              <hr>
+              <p class="title">Professor , Arts and Science</p>
+              <p>pulikesi@gapsi.com</p>
+              <a href="staffinfo.html"><p><button class="button">Staff info</button></p></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column1">
+          <div class="card1 nt">
+            <img src="Project images/sangimangi.jpg" alt="soda" style="width:100%">
+            <div class="container">
+              <h2>Body Soda</h2>
+              <hr>
+              <p class="title">PT Instructor</p>
+              <p>bodysoda@sangimangi.com</p>
+              <a href="staffinfo.html"><p><button class="button">Staff info</button></p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><br><br>
+    <div class="footer" style="width: 1110px;background-color: darkgray;height: 150px;top: 1850px;position: absolute;">
+      <h5 style="text-align: center;">Find Us On</h5>
+  <div class="info" style="text-align: center;">
+    <i class="fa fa-facebook-official"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-snapchat"></i>
+    <i class="fa fa-pinterest-p"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-linkedin"></i>
+  </div>
+  <p style="text-align: center;">Kekron Makron Institute of Technology &copy;</p>
+    </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+    </body>
+</html>

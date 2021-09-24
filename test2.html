@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Engineering</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style2.css"> 
+<link rel="stylesheet" type="text/css" href="style3.css"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<style>
+  .vl {
+  border-left: 6px solid black;
+  position: absolute;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  left: 500px;
+  margin-top: 25px;
+}
+#box{
+  background-color: lightgray;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  height: 500px;
+}
+.writing{
+  width: 800px;
+  padding: 20px;
+  float: right;
+
+}
+img{float: left;
+    width: 200px;
+}
+/*----------------------------right nav--------------------*/
+.topnav-right,.loginid{
+    position: relative;
+    background-color: #333;
+  }
+  .topnav-right a:hover{
+    background-color: #ddd;
+    color: black;
+  }    
+  .topnav-right {
+    float: right;
+    top: -48px;
+    left: -75px;
+  }
+  .loginid a:hover{
+    background-color: #ddd;
+    color: black;
+  }
+.loginid a{
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    position: absolute;
+  }
+</style>
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="courses.html">Courses</a>
+            <a href="staff.html">Staff</a>
+            <a href="achievements.html">Achievements</a>
+            <a href="research.html">Research</a>
+            <a href="contact.html">Contact</a>
+          </div>
+    <div style="height: 2700px;width: 1200px;margin: auto;padding: 30px;background-color: whitesmoke;">
+    <!-- Top navigation -->
+    <div class="topnav">
+    
+      <!-- Centered link -->
+      <div class="topnav-centered">
+        <a href="index.html" class="active">KMIT. DUBAI</a>
+      </div>
+      
+      <!-- Left-aligned links (default) -->
+      
+      <a href="#news"><span style="font-size:15px;cursor:pointer" onclick="openNav()">&#9776;</span></a>
+    </div>
+      
+      <!-- Right-aligned links -->
+      <div class="topnav-right">
+        <div class="dropdown" style="float: left;">
+          <button onclick="Dropdownfn()" class="dropbtn">Search</button>
+          <div id="myDropdown" class="dropdown-content">
+            <input type="text" placeholder="Search.." id="mySearch" onkeyup="dropsearch()">
+            <a href="#about">About</a>
+            <a href="#base">Base</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+            <a href="#custom">Custom</a>
+            <a href="#support">Support</a>
+            <a href="#tools">Tools</a>
+          </div>
+        </div>
+        <div class="loginid">
+        <a href="login.html" style="float: right;">Login</a></div>
+      </div>
+      
+    <br>
+    <div id="content">
+      <div class="header" id="myHeader">
+        <h2 style="text-align: center;">Engineering</h2>
+      </div><br><br>
+      <div id="box">
+        <img src="Project images/aero.jpg">
+        <div class="vl"></div>
+        <div class="writing">
+          <h3>B. Tech. (Bachelor of Technology) in Aerospace Engineering</h3>
+          <p>The Department of Aerospace Engineering (AE) started in the year of 2007, in order to meet the needs and trends 
+            of the current requirements in the Aerospace industries. Presently, the Department offers B. Tech. program in Aerospace
+             Engineering with intake of 60 students per batch.<br><br>
+             The prescribed courses of study and syllabi, cover core areas like, aero-design, structures,
+                propulsion, aerodynamics and systems, and also areas like Physical Sciences, Humanities and Social Harmony.
+                 The department is headed by an eminent professor, Dr. J. Chandrasekhar, having more than 35 years of experience
+                  in the department of Aerospace engineering at IIT-Bombay.<br><br>
+             The onerous task of setting up state-of-the-art laboratories in various fields of study, has
+                become doubly challenging for the Department. Based on its vast research and teaching experience 
+                (from reputed institutions in India and abroad), the faculty of the department, has taken up the challenge.
+                The laboratories and workshops, detailed in the curriculum, have been framed to take up the challenges in industry and
+                 focus on research and development.Tie-ups with the pioneering institutions like NAL, ISRO, DRDO, IITs etc., 
+                 have served as eye-openers on the complexities of real life problems. Both students and faculty involve themselves 
+                 in searching for solutions.</p>
+                 <button value="Department Website">Department Website</button>
+        </div>
+      </div><br><br>
+      <div id="box">
+        <img src="Project images/chem.jpg">
+        <div class="vl" style="height: 400px;"></div>
+        <div class="writing">
+          <h3>B. Tech. (Bachelor of Technology) in Chemical Engineering</h3>
+          <hr>
+          <p>Chemical engineering is the broadest branch of engineering, training professionals to design, 
+            manufacture, operate and control processes of industries such as petroleum and petrochemicals, energy, power 
+            generation including ultra mega power plants, coal-bed methane, combined gas cycle plants and nuclear power, defense, 
+            mining and minerals including steel and aluminum, pharmaceuticals and biotechnology, 
+            nanotechnology, cement, fertilizers, textiles, leather, food and agro-based technologies, polymers, and environmental engineering<br><br>
+            In this context, the demand for qualified professional chemical engineers to propel the growth of the 
+              industry and shape the contours of Indian economy is on the rise. The undergraduate(B. Tech) program offered in Chemical 
+              Engineering at Amrita Vishwa Vidyapeetham has a curriculum of global standards emphasizing the fundamentals, breadth of the discipline, 
+              and the necessary flexibility in being able to apply the fundamentals in widely varying contexts. Simultaneously trains the students in 
+              specialized elective streams such as materials science, nanotechnology, pharmaceuticals and petrochemicals, and petroleum refineries. 
+              With 45% of the faculty having a PhD degree, and another 25% actively pursuing their PhD, the students get to learn from well qualified and experienced staff.</p>
+        </div>
+      </div><br><br>
+      <div id="box">
+        <img src="Project images/cse.jpg">
+        <div class="vl"></div>
+        <div class="writing">
+          <h3>B. Tech. (Bachelor of Technology) in Computer Science and Engineering</h3><hr>
+          <p>Ever since its inception on 7th October 1996, the Department of Computer Science and Engineering at 
+            Amrita Vishwa Vidyapeetham has been progressing towards excellence in the field of teaching and research. With a team 
+            of dedicated, experienced and qualified faculty members, the department has witnessed tremendous growth in academics and research.
+             Major research areas include Image Processing, Multimedia Mining, Evolutionary Computing, 
+            Network Security and Wireless Networks. The department is progressing towards setting up of research laboratories and R & D centers.<br><br>
+            The department offers B.Tech in Computer Science and Engineering. Regular interaction with software companies
+               has helped the department in maintaining its syllabus abreast with technology and industrial standards.
+                The rigorous learning environment has helped make students job-ready.</p>
+        </div>
+      </div><br><br>
+      <div id="box">
+        <img src="Project images/electricalengineeringmain11_resize_md.jpg">
+        <div class="vl"></div>
+        <div class="writing">
+          <h3>B. Tech. (Bachelor of Technology) in Electrical and Electronics Engineering</h3><hr>
+          <p>he department, established in 1994 has sufficient number of academic and support staff, committed to 
+            research and teaching, and well equipped laboratories and library, meeting the requirements of students.
+            It has Power electronics, Electric Machines and Control Systems, Electrical Measurements and Embedded 
+            Systems Laboratories in addition to Electrical Workshop. Each laboratory is equipped with instruments and 
+            equipments for teaching, learning and research.<br><br>
+            The Department of EEE offers B. Tech. in Electrical & Electronics Engineering. The program provides 
+              excellent technical knowledge in the emerging areas of Electrical Engineering. The curriculum is updated 
+              from time to time as per the recommendations of the Board of Studies. This is done to ensure that students 
+              are upto speed with the latest developments in the area. Distinguished Lectures supplement classroom instruction,
+               as invited experts share their knowledge and experience with students.</p>
+        </div>
+      </div><br><br>
+      <div id="box">
+        <img src="Project images/electronics-and-communication-courses.jpg">
+        <div class="vl"></div>
+        <div class="writing">
+          <h3>B. Tech. (Bachelor of Technology) in Electronics and Communication Engineering</h3><hr>
+          <p>B. Tech. in Electronics and Communication Engineering is a four year professional undergraduate program offered by Amrita School of Engineering.
+             Electronic and communication engineering is concerned with applying knowledge in electronics to facilitate communication and solve engineering problems
+             . The curriculum is organized such that it enables students to get a strong foundation on various aspects of electronics and communication engineering
+              such as digital systems design, electromagnetic theory, digital signal processing, microprocessors and microcontrollers, electronic circuits, 
+              VLSI design, digital communication, analog communication, control engineering, and microwave engineering. While building a solid foundation of 
+              the fundamentals, the students are also exposed to emerging trends in the industry and are molded to be quality professionals of the future. The
+               students are also provided an opportunity to choose specialization electives to focus on their identified areas of interest such as embedded 
+               systems, wireless communication, satellite communication, biomedical signal processing, VLSI fabrication technology, speech processing, and optical
+                communication.<br><br>
+           Classes are also delivered by experts from various partner universities around the world through the e-learning network as
+              well as in the form of workshops and seminars. The students are encouraged to undertake real-time projects and actively
+               participate in worldwide technical conferences and workshops and present their work in many of them.<br><br>
+            Department of Electronics and Communications Engineering aims at training students in the areas of Electronics like Solid state circuits, VLSI, Electronic Controls and Communications Engineering including , Multiple access technology and Microwave Engineering.
+              A team of experienced faculty in Analog and Digital Communications are conducting research in various aspects of Communications.
+              </p>
+        </div>
+      </div><br><br>
+      <div id="box">
+        <img src="Project images/mech.jpg">
+        <div class="vl"></div>
+        <div class="writing">
+          <h3>B. Tech. (Bachelor of Technology) in Mechanical Engineering</h3><hr>
+          <p>Mechanical engineering involves the analysis, design, manufacturing. and maintenance of various systems 
+            such as manufacturing plants, industrial equipment and machinery, heating and cooling systems, motor vehicles,
+             aircraft, watercraft, robotics and even medical devices.<br><br>
+             The Department of Mechanical Engineering at the Amritapuri campus was started in 2004.The
+              Department offers a B.Tech. program in mechanical engineering. Over 200 students are currently 
+              enrolled in this undergraduate program.<br><br>
+            The competent and committed faculty in the department have extensive academic, research and industrial experience. 
+            The department also has a team of dedicated and highly experienced supporting staff to help the students in the laboratories.</p>
+        </div>
+      </div><br><br>
+      <div id="box">
+        <img src="Project images/civil.jpg">
+        <div class="vl"></div><br>
+        <div class="writing">
+          <h3>B. Tech. (Bachelor of Technology) in Civil Engineering</h3><hr>
+          <p>The four- year Undergraduate programme leading to the Bachelor of Technology in Civil Engineering equips
+             our graduates with fundamental civil engineering knowledge, a broad set of skills, and an inquisitive attitude.
+              The BTech degree program is designed to offer depth in civil engineering technicalities along with the flexibility
+               to select elective courses that meet students' interests and expose them to the breadth of civil engineering specialties.</p>
+        </div>
+      </div><br><br>
+      <div id="box">
+        <img src="">
+        <div class="vl"></div>
+        <div class="writing">
+          <h3>B. Tech. (Bachelor of Technology) in Electrical and Computer Engineering</h3><hr>
+          <p>Electrical and Computer Engineering (ECE) at Rowan is a modern, innovative, hands-on project-based program,
+             where we train and graduate proficient engineers who will be successful in solving not only today’s problems, 
+             but also tomorrow’s evolving and emerging engineering challenges. Through an innovative curricular structure that
+              includes such unique elements as Engineering Clinics and Clinic Consulting in addition to core courses as well 
+              as a wide spectrum of technical electives on emerging topics, the department instills six core qualities that define
+               and distinguish Rowan ECE graduates to be
+
+            agile · contemporary · communicative · entrepreneurial · transdisciplinary · competent </p>
+        </div>
+      </div><br><br>
+
+    </div>
+    <div class="footer" style="width: 1110px;background-color: darkgray;height: 150px;margin: auto;clear: both;">
+      <h5 style="text-align: center;padding: 15px;">Find Us On</h5>
+      <div class="info" style="text-align: center;">
+        <i class="fa fa-facebook-official"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-snapchat"></i>
+        <i class="fa fa-pinterest-p"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p style="text-align: center;">Kekron Makron Institute of Technology &copy;</p>
+    </div>
+    </div>
+    <script src="script.js"></script>
+    </body>
+</html>

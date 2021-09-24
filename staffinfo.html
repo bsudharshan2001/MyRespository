@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Staff - Info</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style2.css"> 
+<link rel="stylesheet" type="text/css" href="style3.css"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<style>
+  .tab-bar
+  {  padding:8px 16px;
+     float:left;
+     width:auto;
+     border:none;
+     display:block;
+     outline:0;
+     background-color: black;
+  }
+  .tab{
+    background-color: black;
+    border: 0px;
+    size: 10px;
+    color: white;
+  }
+  button{
+    font-size: 18px;
+  }
+</style>
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="courses.html">Courses</a>
+            <a href="staff.html">Staff</a>
+            <a href="achievements.html">Achievements</a>
+            <a href="research.html">Research</a>
+            <a href="contact.html">Contact</a>
+          </div>
+    <div style="height: 700px;width: 1200px;margin: auto;padding: 30px;background-color: whitesmoke;">
+    <!-- Top navigation -->
+    <div class="topnav">
+    
+      <!-- Centered link -->
+      <div class="topnav-centered">
+        <a href="index.html" class="active">KMIT. DUBAI</a>
+      </div>
+      
+      <!-- Left-aligned links (default) -->
+      
+      <a href="#news"><span style="font-size:15px;cursor:pointer" onclick="openNav()">&#9776;</span></a>
+      
+    </div>
+      
+    <!-- Right-aligned links -->
+    <div class="topnav-right">
+      <div class="dropdown" style="float: left;">
+        <button onclick="Dropdownfn()" class="dropbtn">Search</button>
+        <div id="myDropdown" class="dropdown-content">
+          <input type="text" placeholder="Search.." id="mySearch" onkeyup="dropsearch()">
+          <a href="about.html">About</a>
+            <a href="staff.html">Staff</a>
+            <a href="Engineering.html">Engineering</a>
+            <a href="contact.html">Contact</a>
+            <a href="admission.html">Admissions</a>
+            <a href="courses.html">Courses</a>
+            <a href="achievements.html">Achievements</a>
+            <a href="research.html">Research</a>
+        </div>
+      </div>
+      <div class="loginid">
+      <a href="login.html" style="float: right;">Login</a></div>
+    </div>
+    <div id="content" style="margin-left: 100px;">
+      <div class="tab-bar" style="margin-top: 20px;width: 900px;height: 40px;padding: 10px;">
+        <button class="tab" onclick="openCity('About')">About</button>
+        <button class="tab" onclick="openCity('Alma Mater')">Alma Mater</button>
+        <button class="tab" onclick="openCity('Contact')">Contact</button>
+      </div><br>
+      
+      <div id="About" class="tab-content info" style="padding: 40px;width: 900px;">
+        <h3 style="margin-top:30px;text-align: center;"><b><u>About</u></b></h3>
+        <div style="width: 500px;float: left;">
+        <p>Dr. Vadivelu, Dean- Engineering and a Professor in the Department of Chemical Engineering and Materials Science,
+           brings with him over 20 years of international research, management and leadership experience. Dr. Vadivelu's focus and dedication
+            is in preparing the next generation graduates for challenges in science, engineering, technology and management.<br><br> He represents
+             the university’s commitment to excellence in teaching, learning, research and positive contribution to the society.
+              He is a strong believer in an educational process that promotes creativity, innovation and entrepreneurship while
+               providing the students with strong fundamentals.<br><br> Dr. Vadivelu a Ph. D. in Chemical Engineering from
+                Stanford University (USA), has served in various capacities in research and development in the US. Recently,
+                 he served as the Chief Technology Officer for a multi-million dollar company in the US in developing cutting
+                  edge technology for advanced semiconductor device fabrication.</p>
+                  </div>
+                  <img src="Project images/sudalai-dubai-Edit.jpg" style="float: right;width: 300px;padding: 10px;">
+
+      </div>
+      
+      <div id="Alma Mater" class="tab-content info" style="display:none;padding: 40px;">
+        <h3 style="text-align: center;margin-top: 30px;"><b><u>Alma Mater</u></b></h3>
+        <p style="text-align: center;"><ul style="margin-left: 250px;">
+           <li><span style="color: navy;">1995:</span> Ph.D. in Chemical Engineering<br>
+            Stanford University, Stanford, CA, USA</li><br><br>
+            <li><span style="color: navy;">1991:</span> MS in Chemical Engineering<br>
+              Stanford University, Stanford, CA, USA</li><br><br>
+            <li><span style="color: navy;">1989:</span> B.Tech. in Chemical Engineering<br>
+              Regional Engineering College, Warangal</li>
+        </ul></p> 
+      </div>
+      
+      <div id="Contact" class="tab-content info" style="display:none;padding: 40px;">
+        <h3 style="text-align: center;margin-top: 30px;"><b><u>Contact</u></b></h3>
+        <div id="address" style="width: 400px;height: 250px;border-radius: 20px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin: auto;text-align: center;">
+          <h3 style="padding-top: 5px;">vadivelu@dubai.com</h3>
+          <hr style="width: 300px;">
+          <p>No 10,KMIT Housing Complex,<br>
+             Vivekananda Street,<br>
+             Dubai main road,<br>
+             Dubai<br><br><br>
+             <b>Contact us on - +91 97433 25234,</b></p>
+        </div>
+      </div>
+      
+      <script>
+      function openCity(cityName) {
+        var i;
+        var x = document.getElementsByClassName("info");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        document.getElementById(cityName).style.display = "block";  
+      }
+      </script>
+
+    </div>
+    </div>
+    <script src="script.js"></script>
+    </body>
+</html>
